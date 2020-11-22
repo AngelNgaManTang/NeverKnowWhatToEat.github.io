@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    <script src="https://kit.fontawesome.com/e79fd69d6e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Never Know What to Eat</title>
 </head>
 <body>
     <div class="intro" id="intro">
+        <div id="btn_log_in">
+          <a href="login.html">Log In</a>
+        </div>
         <h1 class="intro_title"> Never Know What to Eat</h1>
         <h2 class="intro_subtitle">Subscribe and get a takeaway suprise delivered to you so you can try new food!</h2>
 
@@ -16,7 +26,39 @@
              within your local area.
         </p>
     </div>
-    <div class="partners" id="partners">
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/food1.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/food2.jpg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/food3.jpg">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="img/food4.jpg">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="img/food5.jpg">
+          </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    
+      </div>
+
+    <div class="partners" id="partners"> 
         <h1 class="partners_title"> Takeaways Involved</h1>
         <ul>
             <li>Burger Beats</li>
@@ -38,8 +80,27 @@
         </ul>
         <p>These are the takeaways that have worked with us to provide this service, with their 
             subscription menu changing every 2 weeks. The items that the business offer are items
-            which are in their normal menu's but to ensure that all prices are the same for
+            which are in their normal menu's but to ensure that all prices are the same for the 
+            subscription price.<strong> Please Note: This means if you visit the takeaway the pricing will 
+            be different.</strong>
         </p>
     </div>
+    <footer class="footer">
+        <a href="mailto:contact-me@angelngamantang.com" class="footer_email"> contact-me@angelngamantang.com</a>
+        
+        <ul class="footer_social_list">
+            <li class="social_list_item"><a class="social_list_link" 
+                href="https://www.facebook.com/angel.tang.50"><i class="fab fa-facebook"></i></a></li>
+
+            <li class="social_list_item"><a class="social_list_link" 
+                href="https://www.linkedin.com/in/nga-man-tang-0859071aa"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+        <p class="footer_copyright">© 2020 by Never Know What to Eat</p>
+        <p class="footer_created_by"> Website created by  <a href="https://www.angelngamantang.com/">Angel Nga Man Tang</a></p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
