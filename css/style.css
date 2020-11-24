@@ -1,25 +1,78 @@
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
+:root {
+  --ff-primary: 'Nunito', sans-serif;
+  --ff-secondary: 'Open Sans Condensed', sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #FAD900;
+  --clr-extra: #058465;
+  --clr-hamburger: #172E59;
+
+  --fs-h1: 3.5rem;
+  --fs-h2: 3.25rem;
+  --fs-h3: 2.5rem;
+  --fs-h4: 2.25rem;
+  --fs-h5: 1.5rem;
+  --fs-body: 1.25rem;
+  
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+}
+body{
+  
+  background: var(--clr-dark);
+}
 .mySlides {
     display: none;
 }
-img {
+.img {
     vertical-align: middle;
-    width: 50%;
+    width: 75%;
     position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
 }
-
+/*Intro*/
 .intro_log_in{
   position: relative;
   float: right;
   margin: 2em;
 }
+.logo{
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.intro_title , .intro_subtitle{
+  display: flex;
+  margin-top:2em;
+  margin-bottom:2em;
+  justify-content: center;
+  font-family: var(--ff-primary);
+}
+
+.intro_company_summary{
+  text-align: center;
+  margin-bottom: 2em;
+  font-family: var(--ff-secondary);
+}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -36,6 +89,7 @@ img {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  margin-top: 1em;
   transition: background-color 0.6s ease;
 }
 
@@ -61,12 +115,67 @@ img {
   to {opacity: 1}
 }
 
-@media (max-width: 800px){
-    img {
+@media (max-width: 1000px){
+    .img {
         vertical-align: middle;
         width: 100%;
         position: relative;
     }
+    .intro_subtitle{
+      text-align: center;
+    }
+}
+/*Partners*/
+.partners_title, .partners_list, .partners_description{
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.partners_description, .partners_list{
+  font-family: var(--ff-primary);
+}
+.partners_title{
+  font-family: var(--ff-secondary);
+}
+.partners_list li{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-/*Log In Page*/
+/*Footer*/
+
+.footer {
+  margin-top: 2em;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h5);
+}
+
+.footer li{
+  list-style: none;
+}
+
+.footer_email:hover,
+.footer_social_list_link:hover {
+    opacity: 0.5;
+}
+
+.footer_social_list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.footer_social_list_item {
+  margin: 0 .5em;
+}
+
+.footer_social_list_link {
+  padding: .5em;
+  font-size: var(--fs-h2);
+}
