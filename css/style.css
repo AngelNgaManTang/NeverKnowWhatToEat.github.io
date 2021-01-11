@@ -202,7 +202,7 @@ body{
   
 }
 
-.service_subtitle, .service_price{
+.service_subtitle, .service_title, .service_price{
   font-family: var(--ff-primary);
 }
 
