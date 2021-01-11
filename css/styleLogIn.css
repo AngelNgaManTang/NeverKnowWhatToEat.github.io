@@ -189,7 +189,14 @@ body{
 .form .options-02 a{
   color: var(--clr-extra);
 }
-
+.password_known{
+  position: relative;
+  padding-top: 1em;
+  font-size: var(--fs-h5);
+}
+.link:hover{
+  color: var(--clr-extra);
+}
 /* Responsive CSS */
 
 @media screen and (max-width: 500px){
